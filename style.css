@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+@import url('https //fonts.googleapis.com/css family=poppins');
+@import url('http://fonts.cdnfonts.com/css/galiver-sans');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+  background-image: url("pic/bg2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header
+{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	padding: 0 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #000000;
+	z-index: 1000;
+}
+header .logo
+{
+	color: #FFFFFF;
+	font-size: 30px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+header ul
+{
+	position: relative;
+	display: flex;
+}
+header ul li
+{
+	position: relative;
+	list-style: none;
+}
+header ul li a
+{
+	position: relative;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.5s;
+	font-family: 'Galiver Sans', sans-serif;
+	font-family: 'Galiver Sans Titling', sans-serif;
+}
+header ul li a.active
+{
+	color:#FF7F50;
+}
+header ul li a:hover
+{
+	color: grey;
+	transform: translateY(-5px);
+}
+.toggle
+{
+	display: none;
+}
+section
+{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	padding:100px;
+}
+section img
+{
+	max-width: 300px;
+	padding: 10px;
+}
+section:nth-child(odd)
+{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background: #111;
+	color: #fff;
+}
+section .m1 h2 
+{
+	font-family: 'Galiver Sans', sans-serif;
+	font-family: 'Galiver Sans Titling', sans-serif;                                              	                                 
+}
+section .m1 h2:hover
+{
+	background-image: url(pic/h2.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+.card
+{
+	position: relative;
+	width:300px;
+	height: 400px;
+	transform-style: preserve-3d;
+}
+.card .face
+{
+	position: absolute;
+	width: 100%
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backface-visibility: hidden;
+	transition: 2s ease-in-out;
+}
+.card .face.front
+{
+	
+}
+.card:hover .face.front
+{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card .face.back
+{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .face.back
+{
+	transform: perspective(500px) rotateY(360deg);
+}
+.table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+.table thead
+{
+	background-color: #DC143C;
+}
+.table thead tr th
+{
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.35px;
+	color: white;
+	opacity: 1;
+	padding: 12px;
+	vertical-align: top;
+	border: 1px solid white;
+}
+.table tbody tr td
+{
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	font-weight: normal;
+	color: aliceblue;
+	background: grey;
+	padding: 8px;
+	text-align: center;
+	border: 1px solid white;
+}
+.feedbackContainer
+{
+	position: relative;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 20px;
+	border: dashed grey;
+	overflow: hidden;
+}
+.feedbackContainer .color
+{
+	position: absolute;
+	filter: blur(150px);
+	box-shadow: 10px;
+} 
+.feedbackContainer .color:nth-child(1)
+{
+	top: 0;
+	left: 10;
+	width: 480px;
+	height: 200px;
+	background: #276174;
+}
+.feedbackContainer .color:nth-child(2)
+{
+	bottom: 0;
+	right: 10px;
+	width: 400px;
+	height: 150px;
+	background: #33C58E;
+}
+.feedbackContainer .color:nth-child(3)
+{
+	bottom: 50px;
+	right: 60px;
+	width: 300px;
+	height: 100px;
+	background: #63FD88;
+}
+.container
+{
+	position: relative;
+	text-align: center;
+}
+.container .text input
+{
+	width: 100%;
+}
+.container .sms
+{
+	position: relative;
+}
+@media (max-width: 992px)
+{
+	section
+	{
+		padding: 100px 50px 50px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+	section img
+	{
+		margin: 50px 0 0;
+		max-width: 100%;
+	}
+	section video
+	{
+		margin: 50px 0 0;
+		max-width: 100%;
+	}
+	header ul
+	{
+		position: absolute;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 80px);
+		padding: 50px 100px;
+		text-align: center;
+		overflow: auto;
+		transition: 0.5s;
+		background: #111;
+		flex-direction: column;
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	header.active ul
+	{
+		opacity: 1;
+		top: 80px;
+		transform: translateY(0);
+	}
+	header ul li a
+	{
+		margin: 5px 0;
+		font-size: 24px;
+	}
+	.toggle
+	{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+	.toggle:before
+	{
+		content: '';
+		position: absolute;
+		top: 4px;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		z-index: 1;
+		box-shadow: 0 10px 0 #fff;
+		transition: 0.5s
+	}
+	.toggle:after
+	{
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		z-index: 1;
+		transition: 0.5s
+	}
+	header.active .toggle:before
+	{
+		top: 14px;
+		transform: rotate(45deg);
+		box-shadow: 0 0 0 #fff;
+	}
+	header.active .toggle:after
+	{
+		bottom: 14px;
+		transform: rotate(-45deg);
+	}
+	.table thead
+	{
+		display: none;
+	}
+	.table, .table tbody, .table tr, .table td
+	{
+		display: block;
+		width: 100%;
+	}
+	.table tr
+	{
+		margin-bottom: 15px;	
+	}
+	.table tbody tr td
+	{
+		text-align: right;
+		padding-left: 50%;
+		position: relative;
+	}
+	.table td:before
+	{
+		content:attr(data);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-weight: 600;
+		font-size: 14px;
+		text-align: left;
+	}
+}
+
+

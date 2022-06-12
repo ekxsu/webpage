@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AHMAD ADAM</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link href="http://fonts.cdnfonts.com/css/retro-land-mayhem" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/bastamanbold" rel="stylesheet">
+	
+	<style>
+		
+		section .t1 p{
+			font-size: 30px;
+			font-family: 'Retro Land Mayhem', sans-serif;
+		}
+		
+		section .t3 p{
+			background-image: url("pic/h3.gif");
+  			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 10px;
+			border-radius:20%;
+		}
+		
+		section .t3{
+			text-align: center;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	
+	<!--code for header and navigation button start here-->
+	<header id="header">
+		<a href="#" class="logo">MY WORK</a>
+		<ul>
+			<li><a href="index.html" onclick="toggle()">Home</a></li>
+			<li><a href="second.html" onclick="toggle()">About me</a></li>
+			<li><a href="#" class="active" onclick="toggle()">My work</a></li>
+			<li><a href="last.html" onclick="toggle()">Feedback</a></li>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+	</header>
+	<!--code for header and navigation button end here-->
+	
+	<!--code for content start here-->
+	<section>
+		<div class="t1">
+			<p>Throughout my studies in UiTM, I have been involved in several programs as a multimedia exco. So, there are some posters and a video that I have produced for those programs.</p>
+		</div>
+	</section>
+	
+	<section>
+		<div>
+		<h2 style="font-family: 'BastamanBold', sans-serif;">Poster</h2>
+		<p>&nbsp;</p>
+		<p>Here are the programs I have participated in:</p>
+		<br>
+		<pre>
+1. Verbest
+2. Pemantapan Destini Siswa(PDS)
+3. Arau's Got Talent
+		</pre>
+		<p>&nbsp;</p>
+			
+			<img src="pic/POSTER AKADEMIK 1 x 1.png" alt="poster akademik">
+			<img src="pic/verbest.jpg" alt="poster verbest">
+			<img src="pic/agt.jpg" alt="poster arau got talent">
+			<img src="pic/1.png" alt="jadual pds 1">
+			<img src="pic/entrance.png" alt="poster entrance survey">
+			<img src="pic/2.png" alt="jadual pds 2">
+			
+		</div>		
+	</section>
+	
+	<section>
+		<div class="t3">
+		<h2 style="font-family: 'BastamanBold', sans-serif;">Video - MUSIC VIDEO COVER (SAHABAT-MONOCERUS)</h2>
+		<br>
+		<p>This music video cover was created by my group during semester one. Our group, Monocerus, is made up of four members: Afiq, Diyana, Anis, and myself, Adam. We chose a song by najwa latif called Sahabat. We recorded the scenery for this music video's cover at IKEA Batu Kawan in Penang. After that, I collected and edited all of the footage, which resulted in this video. Have fun watching.</p>	
+		<br>
+		<video width="720" controls>     
+		  <source src="pic/mv.mp4" type="video/mp4">
+		  Your browser does not support HTML video. </video>
+		<br>
+		</div>
+	</section>
+	
+	<section>
+		<div class="t4">
+			<h2 style="font-family: 'Retro Land Mayhem', sans-serif; font-size: 30px;">Coming soon....</h2>
+		</div>
+	</section>
+	
+	<!--code for content end here-->
+	
+	<script type="text/javascript">
+		function toggle(){
+			var header = document.getElementById("header")
+			header.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>

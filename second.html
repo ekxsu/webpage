@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AHMAD ADAM</title>
+	
+	<link rel="stylesheet" href="style.css">
+	
+	<link href="http://fonts.cdnfonts.com/css/retro-land-mayhem" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/bastamanbold" rel="stylesheet">
+	
+	<style>
+		
+		section .s2{
+			
+			background-image: url("pic/h2.gif");
+  			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 10px;
+			font-size: 1em;	
+			border-style: dashed;
+			padding: 10px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	
+	<!--code for header and navigation button start here-->
+	<header id="header">
+		<a href="#" class="logo">ABOUT ME</a>
+		<ul>
+			<li><a href="index.html" onclick="toggle()">Home</a></li>
+			<li><a href="#" class="active" onclick="toggle()">About me</a></li>
+			<li><a href="third.html" onclick="toggle()">My work</a></li>
+			<li><a href="last.html" onclick="toggle()">Feedback</a></li>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+	</header>
+	<!--code for header and navigation button end here-->
+	
+	<!--code for content start here-->
+	
+	<section>
+		<div class="s1">
+			<img src="pic/my profile pic.jpg" alt="My picture 2">
+		</div>
+		
+		<div class="s2">
+			<br>
+		  <h2 style="font-family: 'BastamanBold', sans-serif;">BIOGRAPHY</h2>
+			<br>
+			<pre>
+				<p>Name    : Ahmad Adam Bin Mohd Shahrom</p>
+				<p>Birthday: 20 September 2002</p>
+				<p>Address : Butterworth, Pulau Pinang</p>
+				<p>Field of: Diploma in computer science
+study</p>
+				<p>Semester: 4<sup>th</sup></p>
+				<p>Passion : Multimedia design</p>
+				<p>Skills  : Canva, Adobe Photoshop, Filmora Video Editor</p>
+				<p>Contact : <a href="https://wa.link/fckl0r">013-3535738</a></p>
+			</pre>
+			
+	  </div>
+	</section>
+	
+	<section>
+		<div>
+		  <h2 style="font-family: 'Retro Land Mayhem', sans-serif; font-size: 30px;">Although multimedia is more difficult than one might think, the satisfaction of seeing the work is priceless.</h2>
+		</div>
+		
+	</section>
+	
+	<section id="s3">
+		<div>
+			<h2 style="font-family: 'BastamanBold', sans-serif;">EDUCATION HISTORY</h2>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>School/University Name</th>
+						<th>Place</th>
+						<th>Level of Education</th>
+						<th>Year Start</th>
+						<th>Year End</th>
+						<th>Field of Study</th>
+						<th>Position</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data="School/University Name">Pasti Al-Ilmi</td>
+						<td data="Place">Gerik, Perak</td>
+						<td data="Level of Education">Preschool</td>
+						<td data="Year Start">2008</td>
+						<td data="Year End">2008</td>
+						<td data="Field of Study">General</td>
+						<td data="Position">None</td>
+					</tr>
+					<tr>
+						<td data="School/University Name">SK Kampung Luak</td>
+						<td data="Place">Miri, Sarawak</td>
+						<td data="Level of Education">Primary school</td>
+						<td data="Year Start">2009</td>
+						<td data="Year End">2012</td>
+						<td data="Field of Study">General</td>
+						<td data="Position">School prefects</td>
+					</tr>
+					<tr>
+						<td data="School/University Name">SK Iskandar Perdana</td>
+						<td data="Place">Seri Iskandar, Perak</td>
+						<td data="Level of Education">Primary school</td>
+						<td data="Year Start">2012</td>
+						<td data="Year End">2014</td>
+						<td data="Field of Study">General</td>
+						<td data="Position">Treasurer, school prefects</td>
+					</tr>
+					<tr>
+						<td data="School/University Name">MRSM Merbok</td>
+						<td data="Place">Sungai Petani, Kedah</td>
+						<td data="Level of Education">Secondary school</td>
+						<td data="Year Start">2015</td>
+						<td data="Year End">2019</td>
+						<td data="Field of Study">Accounting</td>
+						<td data="Position">Entrepreneur exco, dormitory representative council</td>
+					</tr>
+					<tr>
+						<td data="School/University Name">UiTM Cawangan Perlis</td>
+						<td data="Place">Arau, Perlis</td>
+						<td data="Level of Education">Diploma</td>
+						<td data="Year Start">2020</td>
+						<td data="Year End">Still study</td>
+						<td data="Field of Study">Computer science</td>
+						<td data="Position">Academic exco, SMPP</td>
+					</tr>
+				</tbody>
+			</table>	
+	  	</div>
+		
+		<img src="pic/book.gif" alt="Book">
+	
+	</section>
+	<!--code for content end here-->
+	
+	<script type="text/javascript">
+		function toggle(){
+			var header = document.getElementById("header")
+			header.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>

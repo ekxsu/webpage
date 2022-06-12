@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AHMAD ADAM</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<style>
+		section .l1{
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body>
+	
+	<!--code for header and navigation button start here-->
+	<header id="header">
+		<a href="#" class="logo">FEEDBACK</a>
+		<ul>
+			<li><a href="index.html" onclick="toggle()">Home</a></li>
+			<li><a href="second.html" onclick="toggle()">About me</a></li>
+			<li><a href="third.html" onclick="toggle()">My work</a></li>
+			<li><a href="#" class="active" onclick="toggle()">Feedback</a></li>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+	</header>
+	<!--code for header and navigation button end here-->
+	
+	<!--code for content start here-->
+	
+	<section>
+		<div class="l1">
+		<div>
+			<h2>Who are you?</h2>
+			<br>
+			
+	<div class="feedbackContainer">
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+		
+		<div class="container">
+			
+		<form method="post" action="feedback.php" name="form">
+			
+	  <div class="text">
+		<br>
+		<label for="name">Name: <span class="required">*</span> </label>
+		<input type="text" id="name" name="name" value="" placeholder="Your name" required="required"/>
+	  </div>
+
+	  <div class="text">
+		<br>
+		<label for="email">Email Address: <span class="required">*</span> </label>
+		<input type="email" id="email" name="email" value="" placeholder="your@email.com" required="required" />
+	  </div>
+		
+	  <div>
+		<br>
+		<label for="relays">Relationship with me: <span class="required">*</span></label>
+		<select name="relationship" id="relays" required="required">
+		  <option selected hidden value="">Select</option>
+		  <option value="Stranger">Stranger</option>
+		  <option value="Friend">Friend</option>
+		  <option value="Lover">Lover</option>
+		  <option value="Family">Family</option>
+		</select>
+	  </div>
+
+	  <div>
+		<br>
+		  <h4>Based on your observation, what is my strength</h4>
+		
+		<label for="radio1">Software development:</label>
+		<input type="radio" name="strength" id="radio1" tabindex="1" value="Software development" >
+		  <br>
+		<label for="radio2">Multimedia:</label>
+		<input type="radio" name="strength" id="radio2" tabindex="2" value="Multimedia">
+		  <br>
+		<label for="radio3">Networking:</label>
+		<input type="radio" name="strength" id="radio3" tabindex="3" value="Networking">
+		
+	  </div>
+
+	  <div>
+		<br>
+		  <h4>In your opinion, suggest one or more new software that i should learn</h4>
+		<label for="checkbox1">Adobe Illustrator:</label>
+		<input type="checkbox" name="software" id="checkbox1" value="Adobe Illustrator">
+	
+		<label for="checkbox2">Adobe After Effect:</label>
+		<input type="checkbox" name="software" id="checkbox2" value="Adobe After Effect">
+		
+		<label for="checkbox2">Adobe Premiere:</label>
+		<input type="checkbox" name="software" id="checkbox3" value="Adobe Premiere">
+		 
+	  </div>
+			
+	  <div class="sms">
+		<br>
+		<label for="message">Message for me: <span class="required">*</span> </label>
+		<br>
+		<textarea id="message" name="message" placeholder="Feel free to give a message." required ></textarea>
+	  </div>
+
+	  <div class="submit">
+		<br>
+		<input type="submit" value="Submit" id="submit" />
+		 &nbsp;
+		<input type="reset" value="Reset" id="reset" />
+	  </div>
+			
+	</form>	
+		</div>
+		
+	
+	</div>
+	
+		
+	</div>	
+	</div>
+		
+		
+	</section>
+
+	<!--code for content end here-->
+	
+	<script type="text/javascript">
+		function toggle(){
+			var header = document.getElementById("header")
+			header.classList.toggle('active')
+		}
+	
+	</script>
+</body>
+</html>
